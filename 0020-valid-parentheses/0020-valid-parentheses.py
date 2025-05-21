@@ -9,8 +9,7 @@ class Solution(object):
         for c in s:
             if c in par:
                 stack.append(c)
-            else:
-                if len(stack) == 0 or c != par[stack.pop()]:
+            elif len(stack) == 0 or c != par[stack.pop()]:
                     return False
 
         return len(stack) == 0
