@@ -6,6 +6,7 @@ class Solution(object):
         """
         stack = []
         par = {'(': ')', '[': ']', '{': '}'}
+
         for c in s:
             if c in par:
                 stack.append(c)
