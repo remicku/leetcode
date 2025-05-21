@@ -4,10 +4,11 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        stack, lookup = [], {"(": ")", "{": "}", "[": "]"}
-        for parenthese in s:
-            if parenthese in lookup:
-                stack.append(parenthese)
-            elif len(stack) == 0 or lookup[stack.pop()] != parenthese:
-                return False
+        stack, par = [], {'(': ')', '[': ']', '{': '}'}
+        for c in s:
+            if c in par:
+                stack.append(c)
+            elif len(stack) == 0 or c != par[stack.pop()]:
+                    return False
+
         return len(stack) == 0
