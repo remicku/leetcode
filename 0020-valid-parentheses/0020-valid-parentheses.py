@@ -4,7 +4,8 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        stack, par = [], {'(': ')', '[': ']', '{': '}'}
+        stack = []
+        par = {'(': ')', '[': ']', '{': '}'}
         for c in s:
             if c in par:
                 stack.append(c)
