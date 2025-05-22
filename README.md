@@ -23,10 +23,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/remicku/leetcode/tree/master/0002-add-two-numbers) |
 | [0206-reverse-linked-list](https://github.com/remicku/leetcode/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/remicku/leetcode/tree/master/0002-add-two-numbers) |
 | [0206-reverse-linked-list](https://github.com/remicku/leetcode/tree/master/0206-reverse-linked-list) |
 ## Tree
 |  |
@@ -61,4 +63,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/remicku/leetcode/tree/master/0560-subarray-sum-equals-k) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/remicku/leetcode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
