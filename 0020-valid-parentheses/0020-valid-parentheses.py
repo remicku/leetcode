@@ -11,7 +11,7 @@ class Solution(object):
             if c in hashmap:
                 stack.append(c)
             else:
-                if len(stack) == 0:
+                if not stack:
                     return False
 
                 p = stack.pop()
@@ -19,4 +19,4 @@ class Solution(object):
                 if c != hashmap[p]:
                     return False
                 
-        return len(stack) == 0
+        return not stack
