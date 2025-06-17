@@ -5,12 +5,18 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        par = {'(': ')', '[': ']', '{': '}'}
+        hashmap = {'(':')', '{':'}', '[':']'}
 
         for c in s:
-            if c in par:
+            if c in hashmap:
                 stack.append(c)
-            elif len(stack) == 0 or c != par[stack.pop()]:
+            else:
+                if len(stack) == 0:
                     return False
 
+                p = stack.pop()
+
+                if c != hashmap[p]:
+                    return False
+                
         return len(stack) == 0
